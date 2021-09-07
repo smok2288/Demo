@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_first_module_zap,Access For Zap,model_first_module_zap,,1,1,1,1
+access_first_module_car,Access For Car,model_first_module_car,,1,1,1,1
+access_first_module_manufacturer,Access For Manufacturer,model_first_module_manufacturer,,1,1,1,1

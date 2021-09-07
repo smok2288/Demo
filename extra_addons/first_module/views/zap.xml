@@ -1,0 +1,42 @@
+<odoo>
+    <record model="ir.ui.view" id="zap_form">
+        <field name="name">Zap</field>
+        <field name="model">first_module.zap</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="quantity"/>
+                        <field name="buyer_id"/>
+                        <field name="car_id"/>
+                        <field name="price"/>
+                        <field name="total_price"/>
+                    </group>
+                </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!--  Tree View Zap  -->
+    <record model="ir.ui.view" id="zap_tree">
+        <field name="name">Zap</field>
+        <field name="model">first_module.zap</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="quantity"/>
+                <field name="buyer_id"/>
+                <field name="total_price"/>
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="zap_action">
+        <field name="name">Zap</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">first_module.zap</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="zap_menu" name="Zap" sequence="200"  action="zap_action"/>
+</odoo>
